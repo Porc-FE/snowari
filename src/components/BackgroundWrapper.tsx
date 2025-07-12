@@ -22,9 +22,9 @@ const BackgroundWrapper = styled.div`
     background: repeating-linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.15) 0px,
-      rgba(0, 0, 0, 0.15) 1px,
+      rgba(0, 0, 0, 0.15) 2px,
       transparent 1px,
-      transparent 4px
+      transparent 6px
     );
     animation: scanline-move 0.2s linear infinite;
     mix-blend-mode: multiply;
@@ -69,6 +69,7 @@ const Overlay = styled.div`
 const Content = styled.div`
   position: relative;
   z-index: 5;
+  min-height: 100vh;
 `;
 
 export default function HomeBackground({
