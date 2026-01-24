@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const BackgroundWrapper = styled.div`
+export const Wrapper = styled.div`
   min-height: 100vh;
   width: 100vw;
   background-image: url("/assets/background.jpg");
@@ -53,7 +53,7 @@ const BackgroundWrapper = styled.div`
   }
 `;
 
-const Overlay = styled.div`
+export const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -66,21 +66,8 @@ const Overlay = styled.div`
   z-index: 4;
 `;
 
-const Content = styled.div`
+export const Content = styled.div`
   position: relative;
   z-index: 5;
   min-height: 100vh;
 `;
-
-export default function HomeBackground({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <BackgroundWrapper>
-      <Overlay />
-      <Content>{children}</Content>
-    </BackgroundWrapper>
-  );
-}

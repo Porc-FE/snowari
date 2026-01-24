@@ -1,11 +1,11 @@
 import Home from "./pages/Home";
 import { Global, css } from "@emotion/react";
-import styled from "@emotion/styled";
+import Section1 from "./components/ProjectSection/Section1";
 
-const Layout = styled.div`
-  min-height: 100vh;
-  width: 100vw;
-`;
+// const Layout = styled.div`
+//   min-height: 100vh;
+//   width: 100vw;
+// `;
 
 function App() {
   return (
@@ -14,20 +14,18 @@ function App() {
         styles={css`
           html,
           body {
-            height: 100%;
+            //height: 100%;
             margin: 0;
             padding: 0;
             font-family: "PP NeueBit", sans-serif;
             background: #f7f8fa;
           }
-          #root {
-            height: 100%;
-          }
         `}
       />
-      <Layout>
+      <main>
         <Home />
-      </Layout>
+        <Section1 />
+      </main>
     </>
   );
 }
