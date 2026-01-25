@@ -1,11 +1,16 @@
 import Header from "../components/Header/Header";
 import BackgroundWrapper from "../components/BackgroundWrapper";
+import { InfoBox, SubTitle, Title } from "./style";
 
 export default function Home() {
   return (
     <BackgroundWrapper>
       <Header />
-      <h1>home Component</h1>
+      <InfoBox>
+        <SubTitle>FRONT-END DEVELOPER</SubTitle>
+        <Title>EUNSEO</Title>
+        <Title>PORTFOLIO</Title>
+      </InfoBox>
     </BackgroundWrapper>
   );
 }
